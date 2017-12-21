@@ -20,8 +20,7 @@ ADD backup.sh /backup/backup.sh
 RUN chmod 0744 /backup/backup.sh
 
 # Install & configure google cloud
-ADD auth_key.json /backup/auth_key.json
-RUN gcloud auth activate-service-account --key-file=/backup/auth_key.json
+ADD keys /backup/keys
 
 # Expose ENV
 ENV SOURCE_GS_BUCKET gs://sourcebucket
