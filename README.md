@@ -1,6 +1,6 @@
 # google-cloud-storage-backup
 
-In case you are using docker (should probably should!), I created a docker image that runs daily timestamped backups of your Firebase Storage into a specified Google Cloud Storage bucket.
+In case you are using docker (you probably should!), I created a docker image that runs daily timestamped backups of your Firebase Storage into a specified Google Cloud Storage bucket.
 
 - Create new Google Cloud service account here: https://console.cloud.google.com/iam-admin/serviceaccounts, e.g. `[project-name]-backup`, download the private key in .json format
 - Create a storage bucket for backups (I use Nearline storage): https://console.cloud.google.com/storage/browser/
